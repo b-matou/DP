@@ -1,0 +1,22 @@
+KLÍČOVÁ SLOVA
+detekce objektů v obrazech, Faster R-CNN, RTG, plíce, strojové učení, hluboké učení, RPN
+
+ABSTRAKT
+Cizí objekty v RTG snímcích hrudníku způsobují komplikace během automatického zpracování snímku. Abychom zabránily chybám, které vznikají právě kvůli těmto cizím objektům, 
+je třeba je nejprve automaticky vyhledat a z následné analýzy je vynechat. Jedná se především o knoflíky, šperky, implantáty, dráty či trubičky. Zároveň nalezení pacemakerů
+a jiných voperovaných zařízení může pomoct při automatickém zpracování. Cílem této práce bylo navrhnout metodu pro detekci cizích objektů v RTG snímcích hrudníku. Pro tento 
+úkol byla zvolena metoda Faster R-CNN s předtrénovanou sítí ResNet50 pro extrakci příznaků, která byla natrénována na 4 000 snímcích a následně otestována na 1 000 snímcích
+z veřejně dostupné databáze. Po nalezení optimálních učících parametrů se podařilo natrénovat síť, která dosahuje 75% přesnosti, 77% senzitivity a 76% F1 skóre. Určitá část 
+chyby je ovšem tvořena nejednotnými anotacemi objektů v datech, kdy ne všechny anotované cizí objekty se nachází v oblasti plic, jak je udáno v popisu.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+KEYWORDS
+object detection in images, Faster R-CNN, X-ray, lungs, machine learning, deep learning, RPN
+
+ABSTRACT
+Foreign objects in Chest X-ray (CXR) cause complications during automatic image processing. To prevent errors caused by these foreign objects, it is necessary to automatically
+find them and ommit them in the analysis. These are mainly buttons, jewellery, implants, wires and tubes. At the same time, finding pacemakers and other placed devices can help
+with automatic processing. The aim of this work was to design a method for the detection of foreign objects in CXR. For this task, Faster R-CNN method with a pre-trained
+ResNet50 network for feature extraction was chosen which was trained on 4 000 images and lately tested on 1 000 images from a publicly available database. After finding the
+optimal learning parameters, it was managed to train the network, which achieves 75% accuracy, 77% recall and 76% F1 score. However, a certain part of the error is formed by
+non-uniform annotations of objects in the data because not all annotated foreign objects are located in the lung area, as stated in the description.
